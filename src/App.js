@@ -23,6 +23,7 @@ function App() {
         <HashRouter basename="/">
         <div>
             <Navbar />
+                <hr />
                 <Route exact path="/" component={Home} />
                 <Route path="/canteens" component={Canteens} />
                 <Route path="/about" component={About} />
