@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Orbital-2019/precache-manifest.5a8b1ad77679ecf1eb4d379d41a84016.js"
+  "/Orbital-2019/precache-manifest.e8afdd1ef58b71e5025f7b2f779bb64a.js"
 );
 
 self.addEventListener('message', (event) => {
