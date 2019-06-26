@@ -23,7 +23,6 @@ function App() {
         <HashRouter basename="/Orbital-2019">
         <div>
             <Navbar />
-                <hr />
                 <Route exact path="/" component={Home} />
                 <Route path="/canteens" component={Canteens} />
                 <Route path="/about" component={About} />
