@@ -1,7 +1,7 @@
 {
-  "name": "city-guide-tutorial",
+  "name": "Foodastic",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://moziliar.github.io/Orbital-2019",
   "dependencies": {
     "ably": "^1.1.12",
