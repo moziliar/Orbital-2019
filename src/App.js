@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/layouts/NavBar";
 import Footer from "./components/layouts/Footer";
 // React Router Import
-import { Switch, Route } from "react-router-dom";
+import { Router, Route} from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 // Import Pages
 import Home from "./components/pages/Home";
 import Canteens from "./components/pages/Canteens";
@@ -22,18 +23,18 @@ function App() {
     return (
         <div>
             <Navbar />
-            <Switch>
-                <Route path="/Orbital-2019/" component={Home} />
-                <Route path="/canteens" component={Canteens} />
-                <Route path="/about" component={About} />
-                <Route path="/details" component={Details} />
-                <Route path="/fooddetails" component={FoodDetails} />
-                <Route path="/fassfooddetails" component={fassFoodDetails} />
-                <Route path="/stalls" component={Stalls} />
-                <Route path="/stalls2" component={Stalls2} />
-                <Route path="/actualstall" component={ActualStall} />
-                <Route component={NotFoundPage} />
-            </Switch>
+                <Router history={createHistory({ basename: process.env.PUBLIC_URL })}>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/canteens" component={Canteens} />
+                    <Route path="/about" component={About} />
+                    <Route path="/details" component={Details} />
+                    <Route path="/fooddetails" component={FoodDetails} />
+                    <Route path="/fassfooddetails" component={fassFoodDetails} />
+                    <Route path="/stalls" component={Stalls} />
+                    <Route path="/stalls2" component={Stalls2} />
+                    <Route path="/actualstall" component={ActualStall} />
+                    <Route component={NotFoundPage} />
+                </Router>
             <Footer />
         </div>
     );
