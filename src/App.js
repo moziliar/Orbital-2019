@@ -23,15 +23,15 @@ function App() {
         <div>
             <Navbar />
             <Switch>
-                <Route path="Orbital-2019/" component={Home} />
-                <Route path="Orbital-2019/canteens" component={Canteens} />
-                <Route path="Orbital-2019/about" component={About} />
-                <Route path="Orbital-2019/details" component={Details} />
-                <Route path="Orbital-2019/fooddetails" component={FoodDetails} />
-                <Route path="Orbital-2019/fassfooddetails" component={fassFoodDetails} />
-                <Route path="Orbital-2019/stalls" component={Stalls} />
-                <Route path="Orbital-2019/stalls2" component={Stalls2} />
-                <Route path="Orbital-2019/actualstall" component={ActualStall} />
+                <Route path="/Orbital-2019/" component={Home} />
+                <Route path="/Orbital-2019/canteens" component={Canteens} />
+                <Route path="/Orbital-2019/about" component={About} />
+                <Route path="/Orbital-2019/details" component={Details} />
+                <Route path="/Orbital-2019/fooddetails" component={FoodDetails} />
+                <Route path="/Orbital-2019/fassfooddetails" component={fassFoodDetails} />
+                <Route path="/Orbital-2019/stalls" component={Stalls} />
+                <Route path="/Orbital-2019/stalls2" component={Stalls2} />
+                <Route path="/Orbital-2019/actualstall" component={ActualStall} />
                 <Route component={NotFoundPage} />
             </Switch>
             <Footer />
