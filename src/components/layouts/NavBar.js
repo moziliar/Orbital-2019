@@ -44,7 +44,8 @@ function Navbar() {
                     <li className="nav-item">
                         <Link
                             className="nav-link text-black text-uppercase ml-3"
-                            to="/about" >
+                            to="/about"
+                        >
                             About Us
                         </Link>
                     </li>

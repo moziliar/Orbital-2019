@@ -29,7 +29,7 @@ class Info2 extends Component {
                                     to="/stalls2"
                                     className="btn btn-outline-info text-uppercase"
                                 >
-                                    More Stalls
+                                    View Stalls
                                 </Link>
                             </div>
                         </div>

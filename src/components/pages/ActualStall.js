@@ -9,10 +9,11 @@ class ActualStall extends Component {
     render() {
         return (
             <div className="container">
+                <h3 className="mt-3">Stalls</h3>
                 <div className="row mt-3">
                     <InfoConsumer>
                         {value => {
-                            return value.info.map(item => {
+                            return value.scienceStall.map(item => {
                                 return (
                                     <InfoActualStall
                                         key={item.id}
