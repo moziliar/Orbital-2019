@@ -28,7 +28,7 @@ function Navbar() {
                     <li className="nav-item">
                         <Link
                             className="nav-link text-black text-uppercase ml-3"
-                            to="/"
+                            to="Orbital-2019/"
                         >
                             Home <span className="sr-only">(current)</span>
                         </Link>
@@ -36,7 +36,7 @@ function Navbar() {
                     <li className="nav-item">
                         <Link
                             className="nav-link text-black text-uppercase ml-3"
-                            to="/canteens"
+                            to="Orbital-2019/canteens"
                         >
                             Canteens
                         </Link>
@@ -44,8 +44,7 @@ function Navbar() {
                     <li className="nav-item">
                         <Link
                             className="nav-link text-black text-uppercase ml-3"
-                            to="/about"
-                        >
+                            to="Orbital-2019/about" >
                             About Us
                         </Link>
                     </li>
