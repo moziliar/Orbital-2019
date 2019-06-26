@@ -23,7 +23,7 @@ function App() {
         <div>
             <Navbar />
             <Switch>
-                <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                <Route exact path="/" component={Home} />
                 <Route path="/canteens" component={Canteens} />
                 <Route path="/about" component={About} />
                 <Route path="/details" component={Details} />
