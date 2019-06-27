@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/layouts/NavBar";
 import Footer from "./components/layouts/Footer";
 // React Router Import
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 // Import Pages
 import Home from "./components/pages/Home";
 import Canteens from "./components/pages/Canteens";
