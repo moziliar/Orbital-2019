@@ -51,6 +51,7 @@ class FoodDetails extends Component {
                         headerTitle,
                         headerSubTitle,
                         headerText,
+                        price,
                         img,
                         title,
                         maps,
@@ -77,7 +78,7 @@ class FoodDetails extends Component {
                                     <li className="nav-item">
                                         <a
                                             href="#reviews"
-                                            className="nav-link"
+                                            className="nav-link text-info"
                                             role="tab"
                                             data-toggle="tab"
                                         >
@@ -88,7 +89,7 @@ class FoodDetails extends Component {
                                     <li className="nav-item">
                                         <a
                                             href="#map"
-                                            className="nav-link"
+                                            className="nav-link text-info"
                                             role="tab"
                                             data-toggle="tab"
                                         >
@@ -106,6 +107,7 @@ class FoodDetails extends Component {
                                     >
                                         <h2 className="mb-3">{title}</h2>
                                         <p>{description}</p>
+                                        <p>Price: {price}</p>
                                         <img
                                             src={img}
                                             alt={title}

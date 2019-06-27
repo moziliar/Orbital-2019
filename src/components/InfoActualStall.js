@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 class Info extends Component {
     render() {
-        const { id, headerTitle, stall, img } = this.props.item;
+        const { id, headerTitle, headerSubTitle, img } = this.props.item;
 
         return (
             <InfoConsumer>
@@ -17,7 +17,7 @@ class Info extends Component {
                                 className="card-img-top"
                             />
                             <div className="card-body">
-                                <h3 className="card-title">{stall}</h3>
+                                <h3 className="card-title">{headerTitle}</h3>
                                 <Link
                                     onClick={() => value.handleDetail(id)}
                                     to="/stalls"

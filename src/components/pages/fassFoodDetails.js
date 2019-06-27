@@ -77,7 +77,7 @@ class fassFoodDetails extends Component {
                                     <li className="nav-item">
                                         <a
                                             href="#reviews"
-                                            className="nav-link"
+                                            className="nav-link text-info"
                                             role="tab"
                                             data-toggle="tab"
                                         >
@@ -88,7 +88,7 @@ class fassFoodDetails extends Component {
                                     <li className="nav-item">
                                         <a
                                             href="#map"
-                                            className="nav-link"
+                                            className="nav-link text-info"
                                             role="tab"
                                             data-toggle="tab"
                                         >

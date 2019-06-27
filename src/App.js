@@ -21,21 +21,21 @@ import NotFoundPage from "./components/pages/NotFoundPage";
 function App() {
     return (
         <HashRouter basename="/Orbital-2019">
-        <div>
-            <Navbar />
-                <hr />
-                <Route exact path="/" component={Home} />
-                <Route path="/canteens" component={Canteens} />
-                <Route path="/about" component={About} />
-                <Route path="/details" component={Details} />
-                <Route path="/fooddetails" component={FoodDetails} />
-                <Route path="/fassfooddetails" component={fassFoodDetails} />
-                <Route path="/stalls" component={Stalls} />
-                <Route path="/stalls2" component={Stalls2} />
-                <Route path="/actualstall" component={ActualStall} />
-                <Route component={NotFoundPage} />
-            <Footer />
-        </div>
+            <div>
+                <Navbar />
+                    <hr />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/canteens" component={Canteens} />
+                    <Route path="/about" component={About} />
+                    <Route path="/details" component={Details} />
+                    <Route path="/fooddetails" component={FoodDetails} />
+                    <Route path="/fassfooddetails" component={fassFoodDetails} />
+                    <Route path="/stalls" component={Stalls} />
+                    <Route path="/stalls2" component={Stalls2} />
+                    <Route path="/actualstall" component={ActualStall} />
+                    <Route component={NotFoundPage} />
+                <Footer />
+            </div>
         </HashRouter>
     );
 }

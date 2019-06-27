@@ -31,7 +31,10 @@ class Contacts extends Component {
                     </Card.Header>
                     <CardGroup>
                         <Card className="border-info">
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img
+                                variant="top"
+                                src=".././images/800x400.png"
+                            />
                             <Card.Body>
                                 <Card.Title>Card title</Card.Title>
                                 <Card.Text>
@@ -48,7 +51,10 @@ class Contacts extends Component {
                             </Card.Footer>
                         </Card>
                         <Card className="border-info">
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img
+                                variant="top"
+                                src=".././images/800x400.png"
+                            />
                             <Card.Body>
                                 <Card.Title>Card title</Card.Title>
                                 <Card.Text>
@@ -63,7 +69,10 @@ class Contacts extends Component {
                             </Card.Footer>
                         </Card>
                         <Card className="border-info">
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img
+                                variant="top"
+                                src=".././images/800x400.png"
+                            />
                             <Card.Body>
                                 <Card.Title>Card title</Card.Title>
                                 <Card.Text>

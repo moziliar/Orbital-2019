@@ -23,15 +23,11 @@ class FoodInfo extends Component {
                                 className="card-img-top"
                             />
                             <div className="card-body">
-                                <h3 className="card-title text-uppercase">
-                                    {headerTitle}
-                                </h3>
-                                <h5 className="card-title">{headerSubTitle}</h5>
-                                <p className="card-text">{headerText}</p>
+                                <h3 className="card-title">{headerTitle}</h3>
                                 <Link
                                     onClick={() => value.handleDetail(id)}
                                     to="/fooddetails"
-                                    className="btn btn-outline-primary text-uppercase"
+                                    className="btn btn-outline-info text-uppercase"
                                 >
                                     More Info
                                 </Link>
