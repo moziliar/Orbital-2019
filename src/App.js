@@ -20,7 +20,7 @@ import NotFoundPage from "./components/pages/NotFoundPage";
 
 function App() {
     return (
-        <HashRouter basename="/Orbital-2019">
+        <HashRouter basename="/">
             <div>
                 <Navbar />
                     <hr />
