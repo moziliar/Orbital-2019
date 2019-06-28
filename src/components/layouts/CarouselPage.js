@@ -7,7 +7,7 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src=".././images/800x400.png"
+                    src="{{site.url}}/images/800x400.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -22,7 +22,7 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src=".././images/800x400.png"
+                    src="{{site.url}}/images/800x400.png"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -37,7 +37,7 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src=".././images/800x400.png"
+                    src="{{site.url}}/images/800x400.png"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
