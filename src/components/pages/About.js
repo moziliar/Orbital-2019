@@ -11,18 +11,19 @@ class Contacts extends Component {
                         About Us
                     </Card.Header>
                     <Card.Body>
-                        <Card.Title>Special title treatment</Card.Title>
+                        <Card.Title>
+                            Where are the Foodies come together.
+                        </Card.Title>
                         <Card.Text>
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            To make NUS a food heaven for the public
                         </Card.Text>
                     </Card.Body>
                 </Card>
 
                 <img
                     className="d-block w-80 mt-5 image-center mx-auto"
-                    src=".././images/800x400.png"
-                    alt="First slide"
+                    src=".././images/about/nus.jpg"
+                    alt="NUS"
                 />
 
                 <Card className="mt-5 mb-5">
@@ -32,61 +33,57 @@ class Contacts extends Component {
                     <CardGroup>
                         <Card className="border-info">
                             <Card.Img
+                                className="border"
                                 variant="top"
-                                src=".././images/800x400.png"
+                                src=".././images/about/location.jpg"
                             />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Locations</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text
-                                    below as a natural lead-in to additional
-                                    content. This content is a little bit
-                                    longer.
+                                    To allow freshies and the public who are new
+                                    to NUS to be able to track the nearest
+                                    canteen or find the canteen they desire to
+                                    go.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
+                                <small className="text-muted" />
                             </Card.Footer>
                         </Card>
                         <Card className="border-info">
                             <Card.Img
+                                className="border"
                                 variant="top"
-                                src=".././images/800x400.png"
+                                src=".././images/about/review.jpg"
                             />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Reviews</Card.Title>
                                 <Card.Text>
-                                    This card has supporting text below as a
-                                    natural lead-in to additional content.{" "}
+                                    To allow the stall owners to improve on
+                                    their food by looking at the constructives
+                                    reviews given the the foodies community.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
+                                <small className="text-muted" />
                             </Card.Footer>
                         </Card>
                         <Card className="border-info">
                             <Card.Img
+                                className="border"
                                 variant="top"
-                                src=".././images/800x400.png"
+                                src=".././images/about/community.jpg"
                             />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Foodies Community</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text
-                                    below as a natural lead-in to additional
-                                    content. This card has even longer content
-                                    than the first to show that equal height
-                                    action.
+                                    To build a foodies heaven for all food
+                                    lovers who like to improve the food quality
+                                    in NUS.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
+                                <small className="text-muted" />
                             </Card.Footer>
                         </Card>
                     </CardGroup>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -8,66 +9,35 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         {/* Column1 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>Foodastic</h4>
                             <ul className="list-unstyled">
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <p>
+                                    Where food lovers come together to build a
+                                    foodies heaven in NUS.
+                                </p>
                             </ul>
                         </div>
                         {/* Column2 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>Canteen Stalls</h4>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="/">Lorem ipsum</a>
+                                    <Link to="/sciencestall">Frontier</Link>
                                 </li>
                                 <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
+                                    <Link to="/fassstall">Deck</Link>
                                 </li>
                             </ul>
                         </div>
                         {/* Column3 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>Top Food</h4>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                            </ul>
-                        </div>
-                        {/* Column4 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
-                            <ul className="list-unstyled">
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
-                                </li>
-                                <li>
-                                    <a href="/">Lorem ipsum</a>
+                                    <Link to="/sciencefooddetails">
+                                        Ayam Penyet
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

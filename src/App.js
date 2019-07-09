@@ -5,38 +5,45 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/layouts/NavBar";
 import Footer from "./components/layouts/Footer";
 // React Router Import
-import { HashRouter, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 // Import Pages
 import Home from "./components/pages/Home";
 import Canteens from "./components/pages/Canteens";
 import About from "./components/pages/About";
-import ActualStall from "./components/pages/ActualStall";
-import Stalls from "./components/pages/Stalls";
-import Stalls2 from "./components/pages/Stalls2";
+import ScienceStall from "./components/pages/ScienceStall";
+import FassStall from "./components/pages/FassStall";
+import SciencePenyetFood from "./components/pages/SciencePenyetFood";
+import FassFishballFood from "./components/pages/FassFishballFood";
 import Details from "./components/pages/Details";
-import FoodDetails from "./components/pages/FoodDetails";
-import fassFoodDetails from "./components/pages/fassFoodDetails";
+import ScienceFoodDetails from "./components/pages/ScienceFoodDetails";
+import FassFoodDetails from "./components/pages/FassFoodDetails";
 import NotFoundPage from "./components/pages/NotFoundPage";
 
 function App() {
     return (
-        <HashRouter basename="/Orbital-2019">
-            <div>
-                <Navbar />
-                    <hr />
-                    <Route exact path="/" component={Home} />
-                    <Route path="/canteens" component={Canteens} />
-                    <Route path="/about" component={About} />
-                    <Route path="/details" component={Details} />
-                    <Route path="/fooddetails" component={FoodDetails} />
-                    <Route path="/fassfooddetails" component={fassFoodDetails} />
-                    <Route path="/stalls" component={Stalls} />
-                    <Route path="/stalls2" component={Stalls2} />
-                    <Route path="/actualstall" component={ActualStall} />
-                    <Route component={NotFoundPage} />
-                <Footer />
-            </div>
-        </HashRouter>
+        <div>
+            <Navbar />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/canteens" component={Canteens} />
+                <Route path="/about" component={About} />
+                <Route path="/details" component={Details} />
+                <Route
+                    path="/sciencefooddetails"
+                    component={ScienceFoodDetails}
+                />
+                <Route path="/fassfooddetails" component={FassFoodDetails} />
+                <Route
+                    path="/sciencepenyetfood"
+                    component={SciencePenyetFood}
+                />
+                <Route path="/fassfishballfood" component={FassFishballFood} />
+                <Route path="/sciencestall" component={ScienceStall} />
+                <Route path="/fassstall" component={FassStall} />
+                <Route component={NotFoundPage} />
+            </Switch>
+            <Footer />
+        </div>
     );
 }
 

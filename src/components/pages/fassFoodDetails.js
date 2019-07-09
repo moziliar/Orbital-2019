@@ -51,6 +51,7 @@ class fassFoodDetails extends Component {
                         headerTitle,
                         headerSubTitle,
                         headerText,
+                        price,
                         img,
                         title,
                         maps,
@@ -106,6 +107,7 @@ class fassFoodDetails extends Component {
                                     >
                                         <h2 className="mb-3">{title}</h2>
                                         <p>{description}</p>
+                                        <p>Price: {price}</p>
                                         <img
                                             src={img}
                                             alt={title}

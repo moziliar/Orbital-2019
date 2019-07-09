@@ -7,14 +7,13 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="{{site.url}}/images/800x400.png"
+                    src=".././images/home/slide1.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 className="text-dark">First slide label</h3>
-                    <p className="text-dark">
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
+                    <h3 className="text-light">Welcome to Foodastic</h3>
+                    <p className="text-light">
+                        Where we showcase the foods in NUS.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -22,14 +21,13 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="{{site.url}}/images/800x400.png"
+                    src=".././images/home/slide2.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h3 className="text-dark">Second slide label</h3>
-                    <p className="text-dark">
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
+                    <h3 className="text-light">Food</h3>
+                    <p className="text-light">
+                        You can find the best food in NUS.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -37,14 +35,13 @@ const CarouselPage = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="{{site.url}}/images/800x400.png"
+                    src=".././images/home/slide3.jpg"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h3 className="text-dark">Third slide label</h3>
-                    <p className="text-dark">
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
+                    <h3 className="text-light">Community</h3>
+                    <p className="text-light">
+                        And all the foodies gathered together.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>

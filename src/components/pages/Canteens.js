@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
-import Info from "../Info";
-import Info2 from "../Info2";
+import ScienceInfo from "../ScienceInfo";
+import FassInfo from "../FassInfo";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
@@ -74,7 +74,9 @@ class Canteens extends Component {
                     <InfoConsumer>
                         {value => {
                             return value.scienceCanteen.map(item => {
-                                return <Info key={item.id} item={item} />;
+                                return (
+                                    <ScienceInfo key={item.id} item={item} />
+                                );
                             });
                         }}
                     </InfoConsumer>
@@ -94,7 +96,9 @@ class Canteens extends Component {
                     <InfoConsumer>
                         {value => {
                             return value.fassCanteen.map(item2 => {
-                                return <Info2 key={item2.id} item2={item2} />;
+                                return (
+                                    <FassInfo key={item2.id} item2={item2} />
+                                );
                             });
                         }}
                     </InfoConsumer>

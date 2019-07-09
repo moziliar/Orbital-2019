@@ -5,7 +5,8 @@ import {
     scienceCanteen,
     fassCanteen,
     detailInfo,
-    scienceStall
+    scienceStall,
+    fassStall
 } from "../data";
 
 const InfoContext = React.createContext();
@@ -17,6 +18,7 @@ class InfoProvider extends Component {
         detailInfo: detailInfo,
         scienceCanteen: scienceCanteen,
         scienceStall: scienceStall,
+        fassStall: fassStall,
         fassCanteen: fassCanteen
     };
 
@@ -58,6 +60,7 @@ class InfoProvider extends Component {
                     maps: this.state.maps,
                     scienceCanteen: this.state.scienceCanteen,
                     scienceStall: this.state.scienceStall,
+                    fassStall: this.state.fassStall,
                     fassCanteen: this.state.fassCanteen,
                     headerTitle: this.state.headerTitle,
                     headerSubTitle: this.state.headerSubTitle,
