@@ -49,6 +49,14 @@ function Navbar() {
                             About Us
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link text-black text-uppercase ml-3"
+                            to="/addcontent"
+                        >
+                            Add Content
+                        </Link>
+                    </li>
                 </ul>
                 <Link to="/search">
                     <button

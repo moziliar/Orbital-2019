@@ -2,6 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+function createLink(canteen) {
+    return (
+        <div>
+            <Link to={`/stalls/${canteen}`}>{canteen}</Link>
+        </div>
+    )
+}
+
 function Footer() {
     return (
         <FooterContainer className="main-footer">
@@ -23,10 +31,10 @@ function Footer() {
                             <h4>Canteen Stalls</h4>
                             <ul className="list-unstyled">
                                 <li>
-                                    <Link to="/sciencestall">Frontier</Link>
+                                    {createLink("Frontier")}
                                 </li>
                                 <li>
-                                    <Link to="/fassstall">Deck</Link>
+                                    {createLink("Deck")}
                                 </li>
                             </ul>
                         </div>

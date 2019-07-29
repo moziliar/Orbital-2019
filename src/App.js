@@ -12,7 +12,6 @@ import Canteens from "./components/pages/Canteens";
 import About from "./components/pages/About";
 import AddContent from "./components/pages/AddContent";
 import SciencePenyetFood from "./components/pages/SciencePenyetFood";
-import Details from "./components/pages/Details";
 import FoodDetails from "./components/pages/FoodDetails";
 import Stalls from "./components/pages/Stalls";
 import NotFoundPage from "./components/pages/NotFoundPage";
@@ -27,7 +26,6 @@ function App() {
                 <Route path="/canteens" component={ Canteens } />
                 <Route path="/about" component={ About } />
                 <Route path="/addcontent" component={ AddContent } />
-                <Route path="/details" component={ Details } />
                 <Route
                     path="/food/:food"
                     component={ FoodDetails }

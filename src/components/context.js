@@ -75,45 +75,12 @@ class InfoProvider extends Component {
             };
         });
     };
-/*
-    getItem2 = id => {
-        const item2 = this.state.info2.find(item2 => item2.id === id);
-        return item2;
-    };
-
-    handleDetail2 = id => {
-        const item2 = this.getItem2(id);
-        this.setState(() => {
-            return {
-                detailInfo: item2
-            };
-        });
-    };
-    */
 
     render() {
         console.log(this.state.detailInfo);
         return (
             <InfoContext.Provider
                 value={{
-                    /*
-                    info: this.state.info,
-                    info2: this.state.info2,
-                    price: this.state.price,
-                    maps: this.state.maps,
-                    scienceCanteen: this.state.scienceCanteen,
-                    scienceStall: this.state.scienceStall,
-                    fassStall: this.state.fassStall,
-                    fassCanteen: this.state.fassCanteen,
-                    headerTitle: this.state.headerTitle,
-                    headerSubTitle: this.state.headerSubTitle,
-                    headerText: this.state.headerText,
-                    name: this.state.name,
-                    avatar: this.state.avatar,
-                    omment: this.state.comment,
-                    handleDetail2: this.handleDetail2,
-                    stall: this.state.stall
-                    */
                     detailInfo: this.state.detailInfo,
                     handleDetail: this.handleDetail,
                     canteens: this.state.canteens,

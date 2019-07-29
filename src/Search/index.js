@@ -31,38 +31,40 @@ export default class Search extends Component {
         return null
     }*/
 
-    return (
-      <div className="col-md-3" style={{ marginTop: "20px" }}>
-        <Card>
-          <CardBody>
-            <p className="">
-              <img
-                src={food.image}
-                alt={food.name}
-              />
-            </p>
-            <CardTitle title={food.name}>
-              {food.name.substring(0, 15)}
-              {food.name.length > 15 && "..."}
-            </CardTitle>
-            <InfoConsumer>
-              {value =>
-                <Button
-                  className="ml-2 btn btn-outline-info text-uppercase"
-                  variant="info"
-                  onClick={() => {
-                    value.handleDetail(food._id);
-                    this.setState({ show: true })
-                  }}
-                >
-                  More Info
-                </Button>
-              }
-            </InfoConsumer>
-          </CardBody>
-        </Card>
-      </div>
-    );
+    if (search != "") {
+        return (
+          <div className="col-md-3" style={{ marginTop: "20px" }}>
+            <Card>
+              <CardBody>
+                <p className="">
+                  <img
+                    src={food.image}
+                    alt={food.name}
+                  />
+                </p>
+                <CardTitle title={food.name}>
+                  {food.name.substring(0, 15)}
+                  {food.name.length > 15 && "..."}
+                </CardTitle>
+                <InfoConsumer>
+                  {value =>
+                    <Button
+                      className="ml-2 btn"
+                      variant="info"
+                      onClick={() => {
+                        value.handleDetail(food._id);
+                        this.setState({ show: true })
+                      }}
+                    >
+                      More Info
+                    </Button>
+                  }
+                </InfoConsumer>
+              </CardBody>
+            </Card>
+          </div>
+        );
+      }
   };
 
   constructor(props, context) {
@@ -79,9 +81,9 @@ export default class Search extends Component {
   };
 
   filterFoods(foods, search) {
-    return foods.filter(country => {
-      return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-    });
+      return foods.filter(country => {
+        return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+      })
   }
 
   handleHide() {
@@ -113,9 +115,9 @@ export default class Search extends Component {
             <div className="row mb-5">
               <InfoConsumer>
                 {value =>
-                  this.filterFoods(value.foods, search).map(food => {
-                    return this.renderFood(food);
-                  })
+                        this.filterFoods(value.foods, search).map(food => {
+                        return this.renderFood(food);
+                      })
                 }
               </InfoConsumer>
             </div>
