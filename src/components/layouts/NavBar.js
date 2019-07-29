@@ -50,12 +50,14 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <button
-                    className="btn btn-outline-info my-2 my-sm-0"
-                    type="submit"
-                >
-                    Search for Food
-                </button>
+                <Link to="/search">
+                    <button
+                        className="btn btn-outline-info my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search for Food
+                    </button>
+                </Link>
             </div>
         </nav>
     );

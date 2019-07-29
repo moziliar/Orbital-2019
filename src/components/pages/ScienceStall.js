@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
-import SciencePenyetInfo from "../SciencePenyetInfo";
+import StallInfo from "../StallInfo";
 
 class ScienceStall extends Component {
     render() {
@@ -12,7 +12,7 @@ class ScienceStall extends Component {
                         {value => {
                             return value.scienceStall.map(item => {
                                 return (
-                                    <SciencePenyetInfo
+                                    <StallInfo
                                         key={item.id}
                                         item={item}
                                     />
