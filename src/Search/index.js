@@ -27,10 +27,6 @@ export default class Search extends Component {
   renderFood = food => {
     const { search, link } = this.state;
 
-    /*if( search !== "" && country.name.toLowerCase().indexOf( search.toLowerCase() ) === -1 ){
-        return null
-    }*/
-
     if (search != "") {
         return (
           <div className="col-md-3" style={{ marginTop: "20px" }}>

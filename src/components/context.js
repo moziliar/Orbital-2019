@@ -14,7 +14,16 @@ class InfoProvider extends Component {
             "FASS",
             "Engineering",
             "Computing"
-        ]
+        ],
+        bestFood: {
+            _id : "5d3dcc98bed9ee1463405ec6",
+            name : "Ayam Penyet",
+            stall : "Uncle Penyet",
+            description : "Smashed Fried Chicken + Rice",
+            price : "$3.50",
+            image : ".././images/canteens/frontier/unclepenyet/frontierayampenyet.jpg",
+            location : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.18633311381..."
+        }
     };
 
     componentDidMount() {
@@ -87,7 +96,8 @@ class InfoProvider extends Component {
                     stalls: this.state.stalls,
                     foods: this.state.foods,
                     news: this.state.news,
-                    faculty: this.state.faculty
+                    faculty: this.state.faculty,
+                    bestFood: this.state.bestFood
                 }}
             >
                 {this.props.children}

@@ -2,14 +2,24 @@ import React, { Component } from "react";
 import CarouselPage from "../layouts/CarouselPage";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
+import { InfoConsumer } from "../context";
+import { Button } from "mdbreact";
+import PopUp from "../../Search/components/PopUp";
 
 class Home extends Component {
     constructor(props, context) {
         super(props, context);
 
         this.state = {
-            annouceShow: false
+            annouceShow: false,
+            bestFoodShow: false
         };
+    }
+
+    handleHide() {
+        this.setState({
+            bestFoodShow: false
+        });
     }
 
     render() {
@@ -83,12 +93,20 @@ class Home extends Component {
                                     enjoy this delicious Indonesian cuisine when
                                     you are near Science.
                                 </p>
-                                <Link
-                                    to="/sciencefooddetails"
-                                    className="btn btn-outline-info text-uppercase"
-                                >
-                                    More Info
-                                </Link>
+                                <PopUp show={this.state.bestFoodShow} handleHide={this.handleHide.bind(this)}/>
+                                <InfoConsumer>
+                                    {value =>
+                                        <Button
+                                            className="btn btn-outline-info text-uppercase"
+                                             onClick={() => {
+                                            value.handleDetail(value.bestFood._id);
+                                            this.setState({ bestFoodShow: true })
+                                            }}
+                                        >
+                                            More Info
+                                        </Button>
+                                    }
+                                </InfoConsumer>
                             </div>
                         </div>
                     </div>

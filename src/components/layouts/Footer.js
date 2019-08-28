@@ -39,6 +39,7 @@ function Footer() {
                             </ul>
                         </div>
                         {/* Column3 */}
+                        {/*
                         <div className="col-md-4 col-sm-6">
                             <h4>Top Food</h4>
                             <ul className="list-unstyled">
@@ -49,6 +50,7 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
+                        */}
                     </div>
                     {/* Footer Bottom */}
                     <div className="footer-bottom">

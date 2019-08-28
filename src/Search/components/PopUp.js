@@ -19,7 +19,6 @@ class PopUp extends Component {
                 </Modal.Header>
                 <Modal.Body>
                     <FoodDetails />
-                    <img src={this.props.foodImg} alt="Pic unavailable" />
                 </Modal.Body>
             </Modal>
         );
